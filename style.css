@@ -1,0 +1,20 @@
+.input-container {
+    display: flex;
+    align-items: center;
+}
+
+.input-container .relative {
+    position: relative;
+    margin-right: 1rem;
+}
+
+.input-container input {
+    padding-left: 2.5rem; /* Ajusta el espaciado izquierdo según sea necesario */
+}
+
+.input-container svg {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0.75rem; /* Ajusta la posición del icono según sea necesario */
+}

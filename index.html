@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <title>FLASHJOB</title>
+</head>
+<body class="flex items-center justify-center flex-col ">
+
+    <!--CONTAINER NAVBAR (LOGO Y ENLACES)-->
+    <div class="container mx-auto border mb-4">
+        <img src="resource/Screenshot_1.png" alt="">
+    </div> 
+    <!--CONTAINER NAVBAR (LOGO Y ENLACES)-->
+
+
+    <!--CONTAINER DE BUSQUEDA (TRABAJO Y PAIS)-->
+    <div class="input-container mb-4">
+        <div class="relative">
+            <input type="text" placeholder="¿Qué estas buscando?..." required="required" class="border px-2 py-1 bg-opacity-30">
+            <svg class="h-5 w-5 text-teal-500" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z"/>
+                <circle cx="10" cy="10" r="7" />
+                <line x1="21" y1="21" x2="15" y2="15" />
+            </svg>
+        </div>
+
+        <div class="relative">
+            <input type="text" placeholder="Seleccionar..." required="required" class="border px-2 py-1 bg-opacity-0">
+            <svg class="h-5 w-5 text-teal-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                <circle cx="12" cy="10" r="3" />
+            </svg>
+        </div>
+    </div>
+    <!--CONTAINER DE BUSQUEDA (TRABAJO Y PAIS)-->
+
+    <div class="grid grid-cols-2 gap-3">
+        <div>
+            <div id="empleo1" id="empleo1" class="relative max-w-sm p-6 mb-4 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 z-20">
+                <a href="#">
+                    <h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white hover:underline">Trabajo Remoto por horas - Programador</h5>
+                    <a class="inline-flex items-center text-black-400">SOFIAPPS</a>
+                    <p class="mb-3 font-normal text-black-500 dark:text-black-400">Lima, Lima</p>
+                    <p>Tiempo completo</p>
+                    <ul>
+                        <li>
+                            1
+                        </li>
+                        <li>
+                            2
+                        </li>
+                    </ul>
+                </a>
+            </div>
+
+            <div id="empleo2" class="relative max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 z-10">
+                <a href="#">
+                    <h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white hover:underline">Programador Junior React  (Fullstack+Javascript+BD)</h5>
+                    <a class="inline-flex items-center text-black-400">BILION S.A.C</a>
+                    <p class="mb-3 font-normal text-black-500 dark:text-black-400">Lima, Lima</p>
+                    <p>s/.1,000 - S/.2,000 al mes</p>
+                    <p>Tiempo completo</p>
+                    <ul>
+                        <li>
+                            1
+                        </li>
+                        <li>
+                            2
+                        </li>
+                    </ul>
+                </a>
+            </div>
+        </div>
+
+
+        <div id="EMPLEOS" class="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+            <a href="#">
+                <h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">Trabajo Remoto por horas - Programador</h5>
+            </a>
+            <a href="#" class="inline-flex items-center text-teal-500 hover:underline font-bold">SOFIAPPS</a>
+            <p class="mb-3 font-normal text-gray-500 dark:text-gray-400">REMOTO / LIMA-PERÚ</p>
+            <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-teal-700 rounded-lg hover:bg-teal-800 focus:ring-4 focus:outline-none focus:ring-teal-300 dark:bg-teal-600 dark:hover:bg-teal-700 dark:focus:ring-blue-800">POSTULAR AHORA</a>
+
+            <hr class="h-px my-8 bg-gray-300 border-0 dark:bg-gray-700">
+
+            <a>
+                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Detalles del empleo</h5>
+            </a>
+            <p class="mb-3 text-sm font-normal text-gray-700 dark:text-black-400">Así es como la información del empleo coincide con tus preferencias de empleo. Administra las preferencias de empleo en cualquier momento desde tu perfil</p>
+            <a class="inline-flex items-center text-gray-900 dark:text-white font-bold">
+                <p>Sueldo</p>
+                <svg class="h-5 w-5 text-gray-900 dark:text-white"  width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  
+                    <path stroke="none" d="M0 0h24v24H0z"/>  <circle cx="12" cy="12" r="9" />  
+                    <path d="M14.8 9a2 2 0 0 0 -1.8 -1h-2a2 2 0 0 0 0 4h2a2 2 0 0 1 0 4h-2a2 2 0 0 1 -1.8 -1" />
+                    <path d="M12 6v2m0 8v2" />
+                </svg>
+            </a>
+            <p>s/.10 por hora</p>
+            <a class="inline-flex items-center text-gray-900 dark:text-white font-bold">
+                <p>Tipo de empleo</p>
+                <svg class="h-5 w-5 text-gray-900 dark:text-white"  width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  
+                    <path stroke="none" d="M0 0h24v24H0z"/>  <circle cx="12" cy="12" r="9" />  
+                    <path d="M14.8 9a2 2 0 0 0 -1.8 -1h-2a2 2 0 0 0 0 4h2a2 2 0 0 1 0 4h-2a2 2 0 0 1 -1.8 -1" />
+                    <path d="M12 6v2m0 8v2" />
+                </svg>
+            </a>
+            <p>Temporal   /   Medio tiempo    /    Practicas</p>
+            
+            <hr class="h-px my-8 bg-gray-300 border-0 dark:bg-gray-700">
+
+            <a>
+                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Ubicación</h5>
+            </a>
+            <p class="mb-3 font-normal text-gray-700 dark:text-gray-700">LIMA-PERÚ</p>
+
+            <hr class="h-px my-8 bg-gray-300 border-0 dark:bg-gray-700">
+
+            <p>Estamos buscando un programador con experiencia para trabajar por horas. El candidato ideal tendrá una sólida comprensión de la programación, la capacidad de trabajar de forma independiente y la habilidad de cumplir con los plazos establecidos. Estamos buscando a alguien con creatividad y una mentalidad proactiva para desarrollar soluciones innovadoras a los problemas técnicos. El programador tendrá la oportunidad de trabajar en un ambiente dinámico y colaborativo.</p>
+
+        </div>
+
+    </div>
+</body>
+</html>
